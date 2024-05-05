@@ -77,7 +77,7 @@ happy_data %>%
 class(happy_data$`happy_data ladder score`)
 
 happy_data_chart <- happy_data %>% 
-  filter(Country %in% c("Norway", "Australia", "Germany", "Bolivia", "Colombia", "Algeria"))%>%
+  filter(Country %in% c("Norway", "Australia", "Germany", "Bolivia", "Colombia", "Albania"))%>%
   ggplot(aes(x = Year, y = `happy_data ladder score`, color = Country))+
   geom_line()+
   scale_y_continuous(limits = c(0, 100)) +
